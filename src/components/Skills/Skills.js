@@ -15,15 +15,15 @@ import redux from '../../images/redux.png'
 const Skills = () => {
 	const images = [
 		htmlLogo,
+		next,
 		cssLogo,
 		javascriptLogo,
 		mongodbLogo,
+		materialui,
 		expressLogo,
 		ReactLogo,
 		nodeLogo,
 		redux,
-		materialui,
-		next,
 		tailwind,
 		gitLogo,
 	];
