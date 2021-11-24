@@ -41,7 +41,7 @@ const Navbar = () => {
 					<NavLink link="/#skills" hide={hideNavbar}>
 						Skills
 					</NavLink>
-					<NavLink link="/#work" hide={hideNavbar}>
+					<NavLink link="/#works" hide={hideNavbar}>
 						Projects
 					</NavLink>
 					<NavLink link="/#contact" hide={hideNavbar}>
