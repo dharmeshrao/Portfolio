@@ -16,7 +16,7 @@ const Navbar = () => {
 
 	const navLinksState = expanded ? " expanded" : "";
 	const handleResume = ()=>{
-		window.location.href = 'https://drive.google.com/file/d/1FzmXstTIA368dwBAOfSaby49dsPr2Xto/view?usp=sharing';
+		window.location.href = 'https://drive.google.com/drive/folders/16YFEYo-AH1u2_ZP5X5_8eMsxoJ5PLM-S';
 	}
 	return (
 		<div className="navbar">
