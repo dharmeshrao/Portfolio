@@ -1,9 +1,9 @@
 import "./project.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import mpl from '../../images/mpl.png'
-const Project = () => {
+const Project = ({elem}) => {
   return (
-    <div className="project">
+    <div   ref={elem}  className="project">
       <div className="piroject"><ScrollAnimation  animateIn="fadeIn">
   <h1>
     Projects

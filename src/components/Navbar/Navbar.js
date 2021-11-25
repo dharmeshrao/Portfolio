@@ -3,9 +3,8 @@ import NavLink from "./NavLink/NavLink";
 import { MdMenu } from "react-icons/md";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({elem}) => {
 	let [expanded, setExpanded] = useState(false);
-
 	const toggleNavbar = () => {
 		setExpanded((prevState) => (expanded = !prevState));
 	};
@@ -41,9 +40,11 @@ const Navbar = () => {
 					<NavLink link="/#skills" hide={hideNavbar}>
 						Skills
 					</NavLink>
-					<NavLink link="/#works" hide={hideNavbar}>
-						Projects
-					</NavLink>
+					<button link="/#projects" className="resume" onClick={()=>{
+						elem.current.scrollIntoView({
+							behavior: "smooth"
+						})
+					}} >Projects</button>
 					<NavLink link="/#contact" hide={hideNavbar}>
 						Contact
 					</NavLink>
