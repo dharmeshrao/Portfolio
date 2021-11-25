@@ -3,56 +3,65 @@ import NavLink from "./NavLink/NavLink";
 import { MdMenu } from "react-icons/md";
 import "./Navbar.css";
 
-const Navbar = ({elem}) => {
-	let [expanded, setExpanded] = useState(false);
-	const toggleNavbar = () => {
-		setExpanded((prevState) => (expanded = !prevState));
-	};
+const Navbar = ({ elem }) => {
+  let [expanded, setExpanded] = useState(false);
+  const toggleNavbar = () => {
+    setExpanded((prevState) => (expanded = !prevState));
+  };
 
-	const hideNavbar = () => {
-		setExpanded(false);
-	};
+  const hideNavbar = () => {
+    setExpanded(false);
+  };
 
-	const navLinksState = expanded ? " expanded" : "";
-	const handleResume = ()=>{
-		window.location.href = 'https://drive.google.com/drive/folders/16YFEYo-AH1u2_ZP5X5_8eMsxoJ5PLM-S';
-	}
-	return (
-		<div className="navbar">
-			<div className="navbar__content content-container-fluid">
-				<a className="navbar__title" href="/">
-					<h1>DHARMESH</h1>
-				</a>
-				<button
-					className="navbar__menu"
-					onClick={toggleNavbar}
-					aria-label="Toggle nav bar"
-				>
-					<MdMenu />
-				</button>
-				<div className={`navbar-links${navLinksState}`}>
-					<NavLink link="#home" hide={hideNavbar}>
-						Home
-					</NavLink>
-					<NavLink link="#about" hide={hideNavbar}>
-						About
-					</NavLink>
-					<NavLink link="/#skills" hide={hideNavbar}>
-						Skills
-					</NavLink>
-					<button link="/#projects" className="resume" onClick={()=>{
-						elem.current.scrollIntoView({
-							behavior: "smooth"
-						})
-					}} >Projects</button>
-					<NavLink link="/#contact" hide={hideNavbar}>
-						Contact
-					</NavLink>
-					<button className="resume" onClick={handleResume}>Resume</button>
-				</div>
-			</div>
-		</div>
-	);
+  const navLinksState = expanded ? " expanded" : "";
+  const handleResume = () => {
+    window.location.href =
+      "https://drive.google.com/file/d/1xCH7iP01UyJZiL6x8yAzBKky1bBDZOON/view?usp=sharing";
+  };
+  return (
+    <div className="navbar">
+      <div className="navbar__content content-container-fluid">
+        <a className="navbar__title" href="/">
+          <h1>DHARMESH</h1>
+        </a>
+        <button
+          className="navbar__menu"
+          onClick={toggleNavbar}
+          aria-label="Toggle nav bar"
+        >
+          <MdMenu />
+        </button>
+        <div className={`navbar-links${navLinksState}`}>
+          <NavLink link="#home" hide={hideNavbar}>
+            Home
+          </NavLink>
+          <NavLink link="#about" hide={hideNavbar}>
+            About
+          </NavLink>
+          <NavLink link="/#skills" hide={hideNavbar}>
+            Skills
+          </NavLink>
+          <a
+            onClick={() => {
+              hideNavbar(true);
+              elem.current.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+            href="/#projects"
+          >
+            Projects
+          </a>
+          <NavLink link="/#contact" hide={hideNavbar}>
+            Contact
+          </NavLink>
+          <button className="resume" onClick={handleResume}>
+            Resume
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;
