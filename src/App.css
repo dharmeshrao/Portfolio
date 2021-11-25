@@ -97,7 +97,7 @@ ul li {
 	background-color: black;
 	color: white;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	gap: 20px;
 	padding: 0;
 	margin: 0;
@@ -224,5 +224,6 @@ ul li:nth-child(8) {
 	}
 	.about-me-info h1 {
 		font-size: 3rem;
+		margin-top: -50px;
 	}
 }

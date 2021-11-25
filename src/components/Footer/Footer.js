@@ -5,6 +5,7 @@ const Footer = () => {
 	return (
 		<footer className="footer" id="contact">
 			<h1>Contact</h1>
+			<p>email: dharmeshaheer@gmail.com</p>
 			<div className="social-links">
 				<a href="https://www.linkedin.com/in/Dharmesh-yadav/">
 					<i className="fab fa-linkedin"></i>

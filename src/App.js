@@ -19,8 +19,8 @@ function App() {
 				</div>
 				<MainSection />
 				<AboutMe />
-				<Skills />
 				<Project elem={elemRef} />
+				<Skills />
 				<Footer />
 			</div>
 		</BrowserRouter>
