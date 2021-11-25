@@ -16,7 +16,7 @@ const AboutMe = () => {
         </p>
         <p>
           When I am not smashing the keyboard, you will find me playing
-          basketball, reading or watching anime.
+          pubg, reading or watching netflix.
         </p>
         <p>Currently I am a student at Masai School.</p>
         </ScrollAnimation>
