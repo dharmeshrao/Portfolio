@@ -3,7 +3,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 const MainSection = () => {
 	return (
 		<div className="main-section">
-			<ScrollAnimation  animateIn="fadeIn">
+			<ScrollAnimation animateOnce={true}  animateIn="fadeIn">
 			<h2 style={{ color: "white" }}>Hii, I Am</h2>
 			<ul>
 				<li>D</li>

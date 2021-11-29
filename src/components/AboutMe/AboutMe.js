@@ -4,11 +4,11 @@ const AboutMe = () => {
   return (
     <div className="about-me" id="about">
       <div className="about-me-info">
-        <ScrollAnimation animateIn="fadeIn">
+        <ScrollAnimation animateOnce={true} animateIn="fadeIn">
           <h1>About Me </h1>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="fadeIn">
+        <ScrollAnimation animateOnce={true} animateIn="fadeIn">
         <p>
           I am a FullStack Developer and a curious person who loves to know how
           different things work together. I love to BUILD STUFF and connect with

@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import NavLink from "./NavLink/NavLink";
 import { MdMenu } from "react-icons/md";
 import "./Navbar.css";
+import resume from '../../images/fw11_313_dharmesh.pdf'
 
-const Navbar = ({ elem }) => {
+const Navbar = ({ elem,skillRef }) => {
   let [expanded, setExpanded] = useState(false);
   const toggleNavbar = () => {
     setExpanded((prevState) => (expanded = !prevState));
@@ -14,10 +15,10 @@ const Navbar = ({ elem }) => {
   };
 
   const navLinksState = expanded ? " expanded" : "";
-  const handleResume = () => {
-    window.location.href =
-      "https://drive.google.com/file/d/1xCH7iP01UyJZiL6x8yAzBKky1bBDZOON/view?usp=sharing";
-  };
+  // const handleResume = () => {
+  //   window.location.href =
+  //     "https://drive.google.com/file/d/1xCH7iP01UyJZiL6x8yAzBKky1bBDZOON/view?usp=sharing";
+  // };
   return (
     <div className="navbar">
       <div className="navbar__content content-container-fluid">
@@ -38,9 +39,6 @@ const Navbar = ({ elem }) => {
           <NavLink link="#about" hide={hideNavbar}>
             About
           </NavLink>
-          <NavLink link="/#skills" hide={hideNavbar}>
-            Skills
-          </NavLink>
           <a
             onClick={() => {
               hideNavbar(true);
@@ -52,12 +50,20 @@ const Navbar = ({ elem }) => {
           >
             Projects
           </a>
+          <a onClick={()=>{
+              hideNavbar(true);
+              skillRef.current.scrollIntoView({
+                behavior: "smooth",
+              });
+          }} href="/#skills" hide={hideNavbar}>
+            Skills
+          </a>
           <NavLink link="/#contact" hide={hideNavbar}>
             Contact
           </NavLink>
-          <button className="resume" onClick={handleResume}>
+          <a className="resume" href={resume}>
             Resume
-          </button>
+          </a>
         </div>
       </div>
     </div>

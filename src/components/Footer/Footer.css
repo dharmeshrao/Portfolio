@@ -7,6 +7,15 @@
   color: white;
   margin: auto;
   margin-top: 0;
+  margin-bottom: 40px;
+
+}
+.footer p{
+  margin-bottom: 2rem;
+}
+.footer p a {
+  color: white;
+  text-decoration: none;
 }
 
 .social-links {
@@ -27,7 +36,6 @@
 }
 p {
   color: white;
-  margin-bottom: 3rem;
 }
 @media screen and (min-width: 640px) {
   .footer {

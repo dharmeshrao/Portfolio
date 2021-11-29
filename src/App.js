@@ -10,17 +10,18 @@ import BackgroundAnimation from "./components/Background/Background";
 import MainSection from "./components/MainSection/MainSection";
 function App() {
 	const elemRef = useRef(false)
+	const skillRef = useRef(false)
 	return (
 		<BrowserRouter>
 			<div className="App">
-				<Navbar elem={elemRef} />
+				<Navbar elem={elemRef} skillRef={skillRef} />
 				<div className="animation-container" id="home">
 					<BackgroundAnimation />
 				</div>
 				<MainSection />
 				<AboutMe />
 				<Project elem={elemRef} />
-				<Skills />
+				<Skills elem={skillRef} />
 				<Footer />
 			</div>
 		</BrowserRouter>
