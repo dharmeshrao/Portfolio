@@ -61,7 +61,7 @@ const Navbar = ({ elem,skillRef }) => {
           <NavLink link="/#contact" hide={hideNavbar}>
             Contact
           </NavLink>
-          <a className="resume" href={resume}>
+          <a className="resume" download="resume_dharmesh" href={resume}>
             Resume
           </a>
         </div>
