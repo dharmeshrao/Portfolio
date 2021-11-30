@@ -1,7 +1,7 @@
 import "./project.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import mpl from "../../images/mpl.png";
-import firstcry from "../../images/firstcry.png";
+// import firstcry from "../../images/firstcry.png";
 import mmt from "../../images/mmt.png";
 const Project = ({ elem }) => {
   return (
@@ -92,33 +92,38 @@ const Project = ({ elem }) => {
           </div>
         </div>
       </ScrollAnimation>
-      <ScrollAnimation animateOnce={true} animateIn="fadeIn">
-        <div className="box">
-          {/* <div className="imgdiv"> */}
-          <img className="projectimg" src={firstcry} alt="" />
-          {/* </div> */}
-          <div className="details">
-            <div className="linkdiv">
-              <h3 className="links">GITHUB</h3>
-              <h3 className="links">DEMO</h3>
-            </div>
-            <h3 className="heading">Firstcry.com</h3>
-            <div className="description">
-              <p>
-                A web application where you can purchase clothing for infants
-              </p>
-            </div>
-            <div className="btndiv">
-              <button>MONGODB</button>
-              <button>JAVASCRIPT</button>
-              <button>EXPRESSJS</button>
-              <button>EJS</button>
-            </div>
-          </div>
-        </div>
-      </ScrollAnimation>
     </div>
   );
 };
 
 export default Project;
+
+
+
+
+
+// {/* <ScrollAnimation animateOnce={true} animateIn="fadeIn">
+// <div className="box">
+//   {/* <div className="imgdiv"> */}
+//   <img className="projectimg" src={firstcry} alt="" />
+//   {/* </div> */}
+//   <div className="details">
+//     <div className="linkdiv">
+//       <h3 className="links">GITHUB</h3>
+//       <h3 className="links">DEMO</h3>
+//     </div>
+//     <h3 className="heading">Firstcry.com</h3>
+//     <div className="description">
+//       <p>
+//         A web application where you can purchase clothing for infants
+//       </p>
+//     </div>
+//     <div className="btndiv">
+//       <button>MONGODB</button>
+//       <button>JAVASCRIPT</button>
+//       <button>EXPRESSJS</button>
+//       <button>EJS</button>
+//     </div>
+//   </div>
+// </div>
+// </ScrollAnimation> */}
