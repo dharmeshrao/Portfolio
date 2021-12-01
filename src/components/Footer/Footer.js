@@ -28,8 +28,8 @@ const Footer = () => {
           <a href="https://github.com/dharmeshrao">
             <i className="fab fa-github"></i>
           </a>
-          <a href="https://twitter.com/drmshrao">
-            <i className="fab fa-twitter"></i>
+          <a href="https://www.facebook.com/dharmesh.ydv/">
+            <i style={{ fontSize: "32px", color: "white" }} className="fa fa-facebook-official"></i>
           </a>
           {/* <a
 					href="https://stackoverflow.com/users/16058244/nishant-bhosale"
