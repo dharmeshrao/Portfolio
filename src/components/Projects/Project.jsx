@@ -120,7 +120,7 @@ const Project = ({ elem }) => {
             <div className="description">
               <p>
                 A simple react app where you can search your Github account.
-                Solo project, checkout link is in the readme file.
+                Solo project, checkout Demo link.
               </p>
             </div>
             <div className="btndiv">
