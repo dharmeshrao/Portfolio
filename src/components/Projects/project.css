@@ -75,6 +75,7 @@
   cursor: pointer;
   color: rgb(112, 15, 223);
   font-weight: 800;
+  text-decoration: none;
 }
 .heading {
   font-size: 30px;

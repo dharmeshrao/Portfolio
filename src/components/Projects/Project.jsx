@@ -19,24 +19,22 @@ const Project = ({ elem }) => {
           {/* </div> */}
           <div className="details">
             <div className="linkdiv">
-              <h3
-                onClick={() => {
-                  window.location.href =
-                    "https://github.com/dharmeshrao/MPL-project";
-                }}
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/dharmeshrao/MPL-project"
                 className="links"
               >
                 GITHUB
-              </h3>
-              <h3
-                onClick={() => {
-                  window.location.href =
-                    "https://htmlpreview.github.io/?https://raw.githubusercontent.com/dharmeshrao/MPL-project/master/mpl%20project/LANDING%20PAGE/landing.html";
-                }}
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/dharmeshrao/MPL-project/master/mpl%20project/LANDING%20PAGE/landing.html"
                 className="links"
               >
-                DEMO
-              </h3>
+                LIVE
+              </a>
             </div>
             <h3 className="heading">MPL.live</h3>
             <div className="description">
@@ -59,23 +57,22 @@ const Project = ({ elem }) => {
           <img className="projectimg" src={mmt} alt="" />
           <div className="details">
             <div className="linkdiv">
-              <h3
-                onClick={() => {
-                  window.location.href =
-                    "https://github.com/sachanarpit/make-my-trip";
-                }}
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/sachanarpit/make-my-trip"
                 className="links"
               >
                 GITHUB
-              </h3>
-              <h3
-                onClick={() => {
-                  window.location.href = "https://mmt-12r.pages.dev/";
-                }}
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://mmt-12r.pages.dev/"
                 className="links"
               >
-                DEMO
-              </h3>
+                LIVE
+              </a>
             </div>
             <h3 className="heading">Makemytrip.com</h3>
             <div className="description">
@@ -98,23 +95,22 @@ const Project = ({ elem }) => {
           <img className="projectimg" src={dev} alt="" />
           <div className="details">
             <div className="linkdiv">
-              <h3
-                onClick={() => {
-                  window.location.href =
-                    "https://github.com/dharmeshrao/devFinder";
-                }}
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/dharmeshrao/devFinder"
                 className="links"
               >
                 GITHUB
-              </h3>
-              <h3
-                onClick={() => {
-                  window.location.href = "https://devfinder-dharmeshrao.vercel.app/";
-                }}
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://devfinder-dharmeshrao.vercel.app/"
                 className="links"
               >
-                DEMO
-              </h3>
+                LIVE
+              </a>
             </div>
             <h3 className="heading">Devfinder</h3>
             <div className="description">
@@ -139,9 +135,14 @@ const Project = ({ elem }) => {
           </div>
           <div className="details">
             <div className="linkdiv">
-              <h3 onClick={()=>{
-                window.location.href = "https://github.com/dharmeshrao/Firstcry-Project"
-              }} className="links">GITHUB</h3>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/dharmeshrao/Firstcry-Project"
+                className="links"
+              >
+                GITHUB
+              </a>
               <h3 className="links">DEMO</h3>
             </div>
             <h3 className="heading">Firstcry.com</h3>
