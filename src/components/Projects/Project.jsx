@@ -4,6 +4,7 @@ import mpl from "../../images/mpl.png";
 import firstcry from "../../images/firstcry.png";
 import mmt from "../../images/mmt.png";
 import dev from "../../images/devfinder.png";
+import dineout from "../../images/dineout.png";
 const Project = ({ elem }) => {
   return (
     <div ref={elem} className="project">
@@ -12,6 +13,47 @@ const Project = ({ elem }) => {
           <h1>Projects</h1>
         </ScrollAnimation>
       </div>
+      <ScrollAnimation animateOnce={true} animateIn="fadeIn">
+        <div className="box">
+          <div className="imgdiv">
+            <img className="projectimg" src={dineout} alt="" />
+          </div>
+          <div className="details">
+            <div className="linkdiv">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/suvamAdhikary/dineout_clone"
+                className="links"
+              >
+                GITHUB
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://dineout-clone.vercel.app/"
+                className="links"
+              >
+                LIVE
+              </a>
+            </div>
+            <h3 className="heading">Dineout.com</h3>
+            <div className="description">
+              <p>
+                Dineout web application gives you the perfect restaurant of your
+                choice. You can filter restaurants and select the date and time
+                of your choice.
+              </p>
+            </div>
+            <div className="btndiv">
+              <button>MONGODB</button>
+              <button>JAVASCRIPT</button>
+              <button>EXPRESSJS</button>
+              <button>REACT</button>
+            </div>
+          </div>
+        </div>
+      </ScrollAnimation>
       <ScrollAnimation animateOnce={true} animateIn="fadeIn">
         <div className="box">
           {/* <div className="imgdiv"> */}
@@ -124,38 +166,6 @@ const Project = ({ elem }) => {
               <button>JAVASCRIPT</button>
               <button>AXIOS</button>
               <button>STYLED COMPONENTS</button>
-            </div>
-          </div>
-        </div>
-      </ScrollAnimation>
-      <ScrollAnimation animateOnce={true} animateIn="fadeIn">
-        <div className="box">
-          <div className="imgdiv">
-            <img className="projectimg" src={firstcry} alt="" />
-          </div>
-          <div className="details">
-            <div className="linkdiv">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://github.com/dharmeshrao/Firstcry-Project"
-                className="links"
-              >
-                GITHUB
-              </a>
-              <h3 className="links">DEMO</h3>
-            </div>
-            <h3 className="heading">Firstcry.com</h3>
-            <div className="description">
-              <p>
-                A web application where you can purchase clothing for infants
-              </p>
-            </div>
-            <div className="btndiv">
-              <button>MONGODB</button>
-              <button>JAVASCRIPT</button>
-              <button>EXPRESSJS</button>
-              <button>EJS</button>
             </div>
           </div>
         </div>
