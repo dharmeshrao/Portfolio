@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NavLink from "./NavLink/NavLink";
 import { MdMenu } from "react-icons/md";
 import "./Navbar.css";
-import resume from '../../images/fw11_313_dharmesh.pdf'
+import resume from '../../images/fw11_313_dharmesh 2.pdf'
 
 const Navbar = ({ elem,skillRef }) => {
   let [expanded, setExpanded] = useState(false);
