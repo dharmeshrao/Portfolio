@@ -35,6 +35,7 @@
     display:block;
     margin:auto;
 	width: 55%;
+	object-fit: contain;
 	height: 65px;
 }
 h1{

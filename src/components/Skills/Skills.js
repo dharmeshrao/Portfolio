@@ -8,7 +8,6 @@ import mongodbLogo from "../../images/mongodb.png";
 import javascriptLogo from "../../images/javascript.png";
 import nodeLogo from "../../images/node-js.png";
 import gitLogo from "../../images/git.png";
-import next from "../../images/next.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import "./Skills.css";
 import tailwind from "../../images/tailwind.png";
@@ -46,10 +45,6 @@ const Skills = ({ elem }) => {
           <div className="section">
             <img src={cssLogo} alt="" />
             <h3>CSS</h3>
-          </div>
-          <div className="section">
-            <img src={next} alt="" />
-            <h3>NEXTJS</h3>
           </div>
           <div className="section">
             <img src={javascriptLogo} alt="" />
