@@ -1,18 +1,17 @@
 import "./project.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import mpl from "../../images/mpl.png";
-import firstcry from "../../images/firstcry.png";
 import mmt from "../../images/mmt.png";
 import dev from "../../images/devfinder.png";
 import dineout from "../../images/dineout.png";
 const Project = ({ elem }) => {
   return (
     <div ref={elem} className="project">
-      <div className="piroject">
         <ScrollAnimation animateOnce={true} animateIn="fadeIn">
+      <div className="piroject">
           <h1>Projects</h1>
-        </ScrollAnimation>
       </div>
+        </ScrollAnimation>
       <ScrollAnimation animateOnce={true} animateIn="fadeIn">
         <div className="box">
           <div className="imgdiv">

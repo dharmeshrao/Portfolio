@@ -94,16 +94,21 @@ ul li {
 	/* letter-spacing: 5px; */
 	animation: lighting 2s linear infinite;
 }
+.wraping{
+	width: 100%;
+	background-color: black;
+}
 
 .about-me {
 	text-align: left;
-	background-color: black;
+	max-width: 1150px;
 	color: white;
 	display: flex;
+	margin:auto;
 	flex-direction: column-reverse;
 	gap: 20px;
-	padding: 0;
-	margin: 0;
+	/* padding: 0; */
+	/* margin: 0; */
 }
 .profilePic{
    display: flex;

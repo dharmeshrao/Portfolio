@@ -2,7 +2,8 @@ import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 const AboutMe = () => {
   return (
-    <div className="about-me" id="about">
+    <div className="wraping">
+      <div className="about-me" id="about">
       <div className="about-me-info">
         <ScrollAnimation animateOnce={true} animateIn="fadeIn">
           <h1>About Me </h1>
@@ -28,6 +29,7 @@ const AboutMe = () => {
           alt=""
         />
       </div>
+    </div>
     </div>
   );
 };

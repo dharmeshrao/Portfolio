@@ -1,5 +1,7 @@
 .footer {
   padding: 2rem 0rem;
+  max-width: 1150px;
+  margin: auto;
   background: black;
 }
 

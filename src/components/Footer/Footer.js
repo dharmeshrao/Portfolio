@@ -4,7 +4,8 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const Footer = () => {
   return (
-    <footer className="footer" id="contact">
+   <div className="wraping">
+      <footer className="footer" id="contact">
       <h1>Contact</h1>
       <p><i className="fas fa-phone fa-spin fa-1x">  </i>   <a href="tel:9306835403">+919306835403</a></p>
       <ScrollAnimation
@@ -37,6 +38,7 @@ const Footer = () => {
         Dharmesh Yadav &copy; 2021
       </p>
     </footer>
+   </div>
   );
 };
 
